@@ -1,0 +1,27 @@
+<!-- templates/result.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vigenère Cipher Result</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Vigenère Cipher Result</h1>
+        <div class="result">
+            <h2>Original Message:</h2>
+            <p>{{ text }}</p>
+            <h2>Key:</h2>
+            <p>{{ key }}</p>
+            <h2>Encrypted Text:</h2>
+            <p>{{ encrypted_text }}</p>
+            <h2>Decrypted Text:</h2>
+            <p>{{ decrypted_text }}</p>
+        </div>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,21 @@
+<!-- form.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vigenere Cipher - Encryption / Decryption</title>
+</head>
+<body>
+    <h1>Vigenere Cipher - Encryption / Decryption</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="message">Enter your message:</label><br>
+        <input type="text" id="message" name="message"><br><br>
+        <label for="key">Enter your key:</label><br>
+        <input type="text" id="key" name="key"><br><br>
+        <button type="submit">Encrypt / Decrypt</button>
+    </form>
+</body>
+</html>
+
